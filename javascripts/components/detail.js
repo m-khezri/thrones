@@ -4,9 +4,9 @@ import {charactersBuilder, getCharacterz} from './characters.js';
 const closeButtonEvent = () => {
   const closeButton = document.getElementById('close');
   closeButton.addEventListener('click', () => {
-      charactersBuilder();
-  }
-
+    charactersBuilder(getCharacterz());
+  });
+};
 
 const detailsBuilder = (character) => {
   let domString = '';
