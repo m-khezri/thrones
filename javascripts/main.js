@@ -1,5 +1,5 @@
-import {getCharacters} from './data/characterData.js';
-import {sortEvents} from './components/characters.js';
+import { getCharacters } from './data/charactersData.js';
+import { sortEvents } from './components/characters.js';
 
 const initializeApp = () => {
   sortEvents();

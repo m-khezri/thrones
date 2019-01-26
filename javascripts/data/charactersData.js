@@ -1,12 +1,12 @@
-import {setCharacters, charactersBuilder, getCharacterz} from '../components/characters.js';
+import { setCharacters, charactersBuilder, getCharacterz } from '../components/characters.js';
 
-function executeThisCodeAfterFileLoaded () {
+function executeThisCodeAfterFileLoaded() {
   const data = JSON.parse(this.responseText);
   setCharacters(data.characters);
   charactersBuilder(getCharacterz());
 }
 
-function executeThisCodeIfXhrFails () {
+function executeThisCodeIfXhrFails() {
   console.log('shit broke');
 }
 
@@ -18,4 +18,4 @@ const getCharacters = () => {
   myRequest.send();
 };
 
-export {getCharacters};
+export { getCharacters };
